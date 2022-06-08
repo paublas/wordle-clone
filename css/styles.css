@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@600&family=Rubik:wght@400;500;600;700;&family=Zilla+Slab:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+
+.header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+
+}
+
+.header h1{
+    font-family: 'nyt-karnakcondensed';
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+
+.cell{
+    border: 2px solid #ccc;
+    width: 5.3rem;
+    height: 5.3rem;
+}
+
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.row-keyboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.letter{
+    background-color: #bcbcbc;
+    padding: 1.8rem;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
