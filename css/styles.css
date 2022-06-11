@@ -59,9 +59,10 @@ html{
 }
 
 .cell-text{
-    font-size: 2.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .keyboard{
@@ -78,6 +79,7 @@ html{
 }
 
 .letter{
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #bcbcbc;
     padding: 1.8rem;
     border-radius: 5px;
@@ -94,3 +96,15 @@ html{
       transform: rotateX(180deg);
    }
  }
+
+ @keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    12.5% { transform: translateX(3px) }
+    25% { transform: translateX(-3px) }
+    37.5% { transform: translateX(3px) }
+    50% { transform: translateX(-3px) }
+    62.5% { transform: translateX(3px) }
+    75% { transform: translateX(-3px) }
+    87.5% { transform: translateX(3px) }
+    100% { transform: translateX(0) }
+   }
