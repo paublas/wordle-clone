@@ -61,6 +61,7 @@ html{
 .cell-text{
     font-size: 2.2rem;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .keyboard{
@@ -84,3 +85,12 @@ html{
     text-transform: uppercase;
     cursor: pointer;
 }
+
+@keyframes flip{
+    from{
+     transform: rotateX(0deg);
+   }
+    to{
+      transform: rotateX(180deg);
+   }
+ }
